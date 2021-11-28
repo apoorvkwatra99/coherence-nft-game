@@ -1,15 +1,12 @@
-# Basic Sample Hardhat Project
+# Sports GIF Portal
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+The project can be viewed here: https://coherence-nft-game.apoorvk.repl.co/
 
-Try running some of the following tasks:
+This Buildspace project runs on the Rinkeby Test Network. A Metamask wallet with some Ethereum on this test network is all that is needed to test it out! Once a user clicks the link, they can connect their Metamask wallet and then mint a character NFT from the Coherence - dtGWYgLblf NFT Collection (The random string at the end of the name is used to differentiate between previous iterations of the NFT collection that were used for testing). Once the NFT has been minted, an alert will provide the user with a link to view their NFT on OpenSea. The user can then use their character NFT to attack the main boss. The different character NFTs have different starting HP and attack damage, and each user is only allowed to mint one character NFT. Users have to work together to defeat the main boss.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+# Backend
+The backend folder is where all the smart contract code lives. `contracts/MyEpicNFT.sol contains` the contract `MyEpicGame` and has several helper functions like `mintCharacterNFT` and `attackBoss`. This contract mints a character NFT to the relevant user and allows users to attack the main boss. The `scripts/run.js` script was mainly used for testing, and the `scripts/deploy.js` script was used to actually deploy the contract.
+
+# Frontend
+
+The frontend folder contains all the code written on Replit. It builds out the actual web page that is linked at the top of this file and calls the contract in the backend. `utils/App.jsx` contains most of the main code to render the page along with some relevant helper functions, and `utils/constants.jsx` contains some important constants. `Components/Arena/index.jsx`, `Components/LoadingIndicator/index.jsx`, and `Components/SelectCharacter/index.jsx` contain code to help render the arena view, the loading indicator, and the select character view, respectively.
