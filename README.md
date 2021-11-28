@@ -1,4 +1,4 @@
-# Sports GIF Portal
+# Coherence NFT Game
 
 The project can be viewed here: https://coherence-nft-game.apoorvk.repl.co/
 
@@ -9,4 +9,4 @@ The backend folder is where all the smart contract code lives. `contracts/MyEpic
 
 # Frontend
 
-The frontend folder contains all the code written on Replit. It builds out the actual web page that is linked at the top of this file and calls the contract in the backend. `utils/App.jsx` contains most of the main code to render the page along with some relevant helper functions, and `utils/constants.jsx` contains some important constants. `Components/Arena/index.jsx`, `Components/LoadingIndicator/index.jsx`, and `Components/SelectCharacter/index.jsx` contain code to help render the arena view, the loading indicator, and the select character view, respectively.
+The frontend folder contains all the code written on Replit. It builds out the actual web page that is linked at the top of this file and calls the contract in the backend. `src/App.jsx` contains most of the main code to render the page along with some relevant helper functions, and `utils/constants.jsx` contains some important constants. `src/Components/Arena/index.jsx`, `src/Components/LoadingIndicator/index.jsx`, and `src/Components/SelectCharacter/index.jsx` contain code to help render the arena view, the loading indicator, and the select character view, respectively.
