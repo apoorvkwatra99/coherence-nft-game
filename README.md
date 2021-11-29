@@ -5,7 +5,7 @@ The project can be viewed here: https://coherence-nft-game.apoorvk.repl.co/
 This Buildspace project runs on the Rinkeby Test Network. A Metamask wallet with some Ethereum on this test network is all that is needed to test it out! Once a user clicks the link, they can connect their Metamask wallet and then mint a character NFT from the Coherence - dtGWYgLblf NFT Collection (The random string at the end of the name is used to differentiate between previous iterations of the NFT collection that were used for testing). Once the NFT has been minted, an alert will provide the user with a link to view their NFT on OpenSea. The user can then use their character NFT to attack the main boss. The different character NFTs have different starting HP and attack damage, and each user is only allowed to mint one character NFT. Users have to work together to defeat the main boss.
 
 # Backend
-The backend folder is where all the smart contract code lives. `contracts/MyEpicNFT.sol contains` the contract `MyEpicGame` and has several helper functions like `mintCharacterNFT` and `attackBoss`. This contract mints a character NFT to the relevant user and allows users to attack the main boss. The `scripts/run.js` script was mainly used for testing, and the `scripts/deploy.js` script was used to actually deploy the contract.
+The backend folder is where all the smart contract code lives. `contracts/MyEpicNFT.sol` contains the contract `MyEpicGame` and has several helper functions like `mintCharacterNFT` and `attackBoss`. This contract mints a character NFT to the relevant user and allows users to attack the main boss. The `scripts/run.js` script was mainly used for testing, and the `scripts/deploy.js` script was used to actually deploy the contract.
 
 # Frontend
 
